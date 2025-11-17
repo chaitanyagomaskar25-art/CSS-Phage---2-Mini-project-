@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade</title>
+   <style>
+    *{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(199, 196, 192);
+}
+table{
+    width: 80%;
+    border-collapse: collapse;
+    color: rgb(29, 17, 24);
+    border: 2px solid black;
+    text-align: center;
+    margin: 30px auto;
+}
+caption{
+    font-size: 25px;
+    font-weight: 700;
+   margin-bottom: 10px;
+}
+th{
+    border: 2px solid black;
+    font-size: 18px;
+    background-color: gray;
+    font-weight: 700;
+    padding: 10px;
+}
+td{
+    border: 2px solid black;
+    padding: 5px;
+}
+tr:nth-child(odd){
+    background-color: rgb(103, 152, 155);
+}
+tr:hover{
+    background-color: rgb(29, 125, 132);
+}
+hr{
+    height: 3px;
+    background-color: black;
+}
+footer li{
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+footer li a{
+    text-decoration: none;
+     color: black;
+}
+
+h1{
+
+    text-align: center;
+}
+footer li a:hover{
+  border: 2px solid;
+   border-radius: 25px;
+    background-color: aliceblue;
+      font-size: 25px;
+    color: rgb(12, 86, 86);
+    padding: 3px;
+    box-shadow: 2px 2px 2px 2px lightseagreen;
+}
+   </style>
+</head>
+<body>    
+   <main>
+     <table>
+        <caption>Grade Table</caption>
+        <thead>
+            <tr>
+                <th scope="row">Course Name</th>
+                <th>Grade</th>
+                <th>Semester</th>
+                <th>Credits</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML & CSS Basics</td>
+                <td>A</td>
+                <td>1</td>
+                <td>3</td>
+                <td>Excellent understanding</td>
+            </tr>
+            <tr>
+                <td>JavaScript Fundamentals</td>
+                <td>B+</td>
+                <td>1</td>
+                <td>3</td>
+                <td>Needs more practice</td>
+            </tr>
+            <tr>
+                <td>Data Structures</td>
+                <td>A-</td>
+                <td>1</td>
+                <td>4</td>
+                <td>Good problem-solving skills</td>
+            </tr>
+            <tr>
+                <td>Database Management</td>
+                <td>B</td>
+                <td>1</td>
+                <td>3</td>
+                <td>Work on SQL queries</td>
+            </tr>
+            <tr>
+                <td>Web Project</td>
+                <td>A</td>
+                <td>1</td>
+                <td>5</td>
+                <td>Project completed successfully</td>
+            </tr>
+        </tbody>
+    </table>
+</main><hr>
+<footer>
+    <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+                <li><a href="Grade.html">Grades Table</a></li>
+                <li><a href="contact.html">Contact us</a></li>   
+                <li><a href="mini_project/Mini Projects.html">Mini Projects</a></li>  
+            </ul>
+        </nav>
+</footer>
+    
+</body>
+</html>

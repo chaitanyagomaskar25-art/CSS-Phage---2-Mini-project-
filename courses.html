@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        *{
+    text-decoration: noen;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(248, 248, 231);
+}
+/* -------------Container section------------ */
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px ;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    padding: 50px;
+    height: auto;
+    margin: 40px;
+    border-radius: 25px;      
+    box-shadow: 0 0 10px 5px gray;
+   
+
+}
+.container:hover{
+    background-color: darkgrey;
+   
+}
+.container1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px ;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    padding: 50px;
+    height: auto;
+    margin: 40px;  
+    flex-direction: row-reverse;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 5px gray;
+    
+}
+.container1:hover{
+    background-color: darkgrey;
+   
+}
+.container2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px ;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    padding: 50px;
+    height: auto;
+    margin: 40px;  
+    border-radius: 25px;
+    box-shadow: 0 0 10px 5px gray;
+    
+}
+.container2:hover{
+    background-color: darkgrey;
+    
+    
+}
+/*-------------------- items section------------- */
+
+.item{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(65, 118, 122);
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10%;
+    
+    flex-basis: 200px;
+}
+.item:hover{
+   box-shadow: 0 0 10px 5px rgb(84, 83, 83);
+   transition: transform 0.5s ease-in;
+    transform: translateX(-8px);
+}
+
+.item1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(65, 118, 122);
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 30%;
+}
+.item1:hover{
+   box-shadow: 0 0 10px 5px rgb(84, 83, 83);
+   transition: transform 0.5s ease-in;
+    transform: translateX(-8px);
+}
+.item2{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(65, 118, 122);
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10%;
+   
+    
+}
+.item2:hover{
+     box-shadow: 0 0 10px 5px rgb(84, 83, 83);
+     transition: transform 0.5s ease-in;
+    transform: translateX(8px);
+    
+}
+
+/* -----------------other decoration---------------*/
+h2{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline wavy rgb(196, 38, 122);
+    font-style: italic;
+}
+h1{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-size: 50px;
+    color: rgb(99, 28, 85);
+}
+div li{
+    color: rgb(209, 208, 208);
+    background-color: rgb(65, 118, 122);
+    list-style: none ;
+    font-style: italic;
+    font-size: 20px;
+}
+hr{
+    height: 3px;
+    background-color: black;
+}
+/* --------------------Footer--------------- */
+footer li{
+    padding: 0;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+footer li a{
+    text-decoration: none;
+     color: black;
+}
+footer li a:hover{
+  border: 2px solid gray;
+   border-radius: 25px;
+    background-color: aliceblue;
+      font-size: 25px;
+    color: rgb(245, 107, 130) ;
+    padding: 3px;
+    box-shadow: -2px 2px 2px 2px rgb(84, 83, 83);
+}
+
+@media only screen and (min-width: 1024px){
+    .container1{
+        flex-direction: row;
+        
+       
+    }
+    .item1{
+        flex-grow: 0;
+         height: 200px;
+        width: 200px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1><q>My Courses</q></h1>
+    </header>
+    <main>
+        <h2>Current Courses with Descriptions:</h2>
+        <div class="container">
+            
+            <div class="item"><li>HTML & CSS Basics - Learn the structure of web pages, formatting, and basic styling.</li></div>
+            <div class="item"><li>JavaScript Fundamentals - Introduction to programming concepts and interactive web elements.</li></div>
+            <div class="item"><li>Data Structures - Covers arrays, lists, stacks, queues, and algorithm basics.</li></div>
+            <div class="item"><li>Database Management - SQL basics, relational databases, and CRUD</li></div>
+            <div class="item"><li>Web Project - Hands-on project building a functional student portal.</li></div>
+            </div>
+            <h2>Completed Courses:</h2>
+            <div class="container1">
+            <div class="item1"><li>Python Basics</li></div>
+            <div class="item1"><li>Computer Networks</li></div>
+            <div class="item1"><li>Mathematics for Computing</li></div>
+            </div> 
+             <h2>Upcoming Courses:</h2>
+            <div class="container2">
+            <div class="item2"><li>AI Fundamentals</li></div>
+            <div class="item2"><li>Advanced JavaScript</li></div>
+            <div class="item2"><li>Web Security</li></div>
+            <div class="item2"><li>HTML & CSS Basics: Tags, forms, tables, headings, lists</li></div>
+            <div class="item2"><li>JavaScript Fundamentals : Variables, loops, DOM basics</li></div>
+        
+            </div>
+           
+    </main>
+ <hr>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+                <li><a href="Grade.html">Grades Table</a></li>
+                <li><a href="contact.html">Contact us</a></li>   
+                <li><a href="mini_project/Mini Projects.html">Mini Projects</a></li> 
+            </ul>
+        </nav>
+    </footer> 
+</body>
+</html>
